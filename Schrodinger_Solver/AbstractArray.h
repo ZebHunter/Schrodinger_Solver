@@ -1,5 +1,4 @@
 #ifndef ARRAYT_HPP  
-
 #define ARRAYT_HPP  
 
 
@@ -170,7 +169,7 @@ inline T& arrayt<T>::operator()(const int i1, const int i2)
 
 
 template < class T >
-inline T& arrayt<T>::operator()(const int i)
+inline T& arrayt<T>::operator()(int i)
 {
 #ifdef ARRAYT_BOUNDS_CHECK
     if ((i < 0) || (i >= nn) || (nndim != 1)) {
